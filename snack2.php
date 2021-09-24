@@ -39,14 +39,13 @@ SUPER BONUS: Personalizzare l'avviso di accesso negato con la motivazione. es: (
         <h2><?= $students[$i]['nome'] . ' ' . $students[$i]['cognome'] ?></h2>
         <small>
           <?php  
-          $media = array_sum($student[$i]["voti"]) / count($student[$i]["voti"] );
-          
+          $media = array_sum($students[$i]["voti"]) / count($students[$i]["voti"] );
           ?>
         <?php echo $media; ?>
       
       </small>
       </li>
-
+    <?php } ?>
   </ul>
 
 
